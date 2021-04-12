@@ -30,12 +30,12 @@
             class="mr-md-2 mb-2 mb-md-0 lang-dropdown"
           >
             <b-dropdown-item
-              v-for="lang in languages"
-              :key="lang.info.code"
-              @click="setLanguage(lang.info.code)"
-              :active="lang == lang.info.code ? true : false"
+              v-for="language in languages"
+              :key="language.info.code"
+              @click="setLanguage(language.info.code)"
+              :active="language.info.code == lang"
               href="#"
-              >{{ lang.info.code }}</b-dropdown-item
+              >{{ language.info.code }}</b-dropdown-item
             >
           </b-dropdown>
 
