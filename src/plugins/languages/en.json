@@ -1,0 +1,39 @@
+{
+    "info":{
+        "name": "English",
+        "code": "EN"
+    },
+    "LOGIN_TITLE__C": "The text on this line appears when you log in.",
+    "HOMEPAGE__U": "HOMEPAGE",
+    "LOREM_IPSUM_TITLE__C": "Lorem Ipsum Titles",
+    "LOREM_IPSUM_TEXT__C": "Lorem Ipsum is dummy text used in the typesetting and printing industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "MORE_INFO__C": "More Info",
+    "HOMEPAGE__C": "Homepage",
+    "CONTACT__C": "Contact Us",
+    "LOGIN__C": "Login",
+    "LOGOUT__C": "Logout",
+    "HELLO__C": "Hello",
+    "EMAIL__C": "E-Mail",
+    "PASSWORD__C": "Password",
+    "LOGIN_ERROR__C": "E-posta veya Şifre Hatalı",
+    "REQUIRED_ERROR__C": "E-mail or Password Incorrect",
+    "EMAIL_ERROR__C": "Please enter a valid email address",
+    "PHONE_MAX_LENGTH_ERROR__C": "Please enter a valid phone number",
+    "TITLE__C": "Title",
+    "NAME__C": "Name",
+    "PHONE__C": "Phone",
+    "COUNTRY__C": "Country",
+    "TEXT__C": "Text",
+    "SUBMIT__C": "Submit",
+    "CONTACT_FORM__C":"Contact Form",
+    "COUNTRY_LIST__ARRAY":[
+        { "key": "TR", "value": "Turkey" },
+        { "key": "US", "value": "United States of America" },
+        { "key": "GB", "value": "United Kingdom" },
+        { "key": "DE", "value": "Germany" },
+        { "key": "SE", "value": "Sweden" },
+        { "key": "KE", "value": "Kenya" },
+        { "key": "BR", "value": "Brazil" },
+        { "key": "ZW", "value": "Zimbabwe" }
+    ]
+}
