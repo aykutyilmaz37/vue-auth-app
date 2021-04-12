@@ -4,7 +4,7 @@
 ## Ayrıca i18n eklentisi kullanılarak dil seçeneği eklendi.
 
 # Demo
-## https://vue-auth-app.netlify.app/
+## https://vue-auth-app-ay.netlify.app/
 
 
 ### Paket İçeriği 
