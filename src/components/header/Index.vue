@@ -24,21 +24,7 @@
               <span>{{ $t("CONTACT__C") }}</span>
             </b-nav-item>
           </b-navbar-nav>
-          <b-dropdown
-            v-bind:text="lang"
-            variant="warning"
-            class="mr-md-2 mb-2 mb-md-0 lang-dropdown"
-          >
-            <b-dropdown-item
-              v-for="language in languages"
-              :key="language.info.code"
-              @click="setLanguage(language.info.code)"
-              :active="language.info.code == lang"
-              href="#"
-              >{{ language.info.code }}</b-dropdown-item
-            >
-          </b-dropdown>
-
+          <Lang />
           <Button
             v-if="!this.$store.getters.isAuthenticated"
             v-bind:text="$t('LOGIN__C')"
@@ -53,8 +39,8 @@
             class="logged-dropdown"
           >
             <template #button-content>
-              <b-icon icon="person-fill"></b-icon> {{ $t("HELLO__C") }}
-              {{ userName }}
+              <b-icon icon="person-fill"></b-icon>
+              {{ userEmail }}
             </template>
             <b-dropdown-item @click="logout">{{
               $t("LOGOUT__C")
@@ -67,20 +53,11 @@
 </template>
 <script>
 import Button from "../button/Button.vue";
-import i18n from "../../plugins/i18n";
+import Lang from '../lang/Lang.vue';
 import "./Index.scss";
 export default {
-  components: { Button },
+  components: { Button, Lang },
   name: "Header",
-  data() {
-    return {
-      lang:
-        localStorage.getItem("lang") != null
-          ? localStorage.getItem("lang")
-          : "TR",
-      languages: Object.values(i18n.messages),
-    };
-  },
   methods: {
     logout() {
       this.$store.dispatch("logout");
@@ -88,15 +65,10 @@ export default {
     openModal() {
       this.$bvModal.show("loginModal");
     },
-    setLanguage(val) {
-      this.lang = val;
-      this.$store.dispatch("setLang", val);
-      this.$i18n.locale = val;
-    },
   },
   computed: {
-    userName() {
-      return this.$store.state.user.name;
+    userEmail() {
+      return this.$store.state.user.email;
     },
   },
 };

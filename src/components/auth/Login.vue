@@ -38,8 +38,9 @@
           {{ $t("REQUIRED_ERROR__C") }}
         </b-form-invalid-feedback>
       </div>
-      <div class="button-container d-flex flex-column align-items-center">
+      <div class="button-container d-flex justify-content-between">
         <Button type="submit" v-bind:text="$t('LOGIN__C')" variant="dark" />
+        <Lang />
       </div>
     </b-form>
   </div>
@@ -48,6 +49,7 @@
 import Button from "../button/Button.vue";
 import { validationMixin } from "vuelidate";
 import { required,email } from "vuelidate/lib/validators";
+import Lang from '../lang/Lang.vue';
 
 export default {
   mixins: [validationMixin],
@@ -84,6 +86,7 @@ export default {
   },
   components: {
     Button,
+    Lang,
   },
   validations: {
     user: {

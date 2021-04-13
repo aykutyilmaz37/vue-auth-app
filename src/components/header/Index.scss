@@ -11,7 +11,7 @@ $border-color-gray:#ececec;
 }
 
 @media (max-width:576px) {
-    .lang-dropdown,.logged-dropdown {
+    .logged-dropdown {
         flex-wrap:wrap;
         ul{
             position:relative;

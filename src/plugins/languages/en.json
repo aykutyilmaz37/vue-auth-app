@@ -12,7 +12,6 @@
     "CONTACT__C": "Contact Us",
     "LOGIN__C": "Login",
     "LOGOUT__C": "Logout",
-    "HELLO__C": "Hello",
     "EMAIL__C": "E-Mail",
     "PASSWORD__C": "Password",
     "LOGIN_ERROR__C": "E-mail or Password Incorrect",
