@@ -73,7 +73,7 @@
 
               <div class="form-group">
                 <label for="country">{{ $t("COUNTRY__C") }}</label>
-                <b-form-input list="country-list" id="country"></b-form-input>
+                <b-form-input list="country-list" id="country" v-model="contact.country"></b-form-input>
                 <b-datalist id="country-list">
                   <option
                     v-for="country in countryList"
